@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:RestCallWithCombineFramework/RestCallWithCombineFramework.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ReadinJSONFile/ReadinJSONFile.xcodeproj">
    </FileRef>
    <FileRef
