@@ -12,25 +12,27 @@ struct CellItemRow: View {
     
     let menuItem: Items
     var body: some View {
-        HStack {
-            Image(menuItem.thumbnailImageName.lowercased())
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.gray, lineWidth: 1))
-            VStack {
-                Text(menuItem.name)
-                    .font(.headline)
-                    .lineLimit(0)
-                Text(String("$\(menuItem.price)"))
-                    .font(.system(size: 10.0))
-            }
-            ForEach(menuItem.restrictions, id:\.self) { restriction in
-                Text(restriction)
-                    .font(.footnote)
-                    .padding(10)
-                    .background(Color.black)
+        NavigationLink(destination: ItemDetailView(item: menuItem)) {
+            HStack {
+                Image(menuItem.thumbnailImageName.lowercased())
                     .clipShape(Circle())
-                    .foregroundColor(.white)
+                    .overlay(Circle().stroke(Color.gray, lineWidth: 1))
+                VStack {
+                    Text(menuItem.name)
+                        .font(.headline)
+                        .lineLimit(0)
+                    Text(String("$\(menuItem.price)"))
+                        .font(.system(size: 10.0))
+                }
+                ForEach(menuItem.restrictions, id:\.self) { restriction in
+                    Text(restriction)
+                        .font(.footnote)
+                        .padding(10)
+                        .background(Color.black)
+                        .clipShape(Circle())
+                        .foregroundColor(.white)
 
+                }
             }
         }
     }
