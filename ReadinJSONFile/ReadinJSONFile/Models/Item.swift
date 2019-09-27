@@ -8,17 +8,18 @@
 
 import Foundation
 
-struct ItemSection: Codable, Identifiable {
+struct ItemSection: Codable, Identifiable, Hashable {
     let id: String
     let name: String
     let items: [Items]
 }
 
-struct Items: Codable, Identifiable {
+struct Items: Codable, Identifiable,Hashable {
     let id: String
     let name: String
     let photoCredit: String
     let price: Double
     let restrictions: [String]
     let description: String
+    
 }

@@ -11,12 +11,17 @@ import SwiftUI
 struct ContentView: View {
    @State var items = try! JSONDecoder().decode([ItemSection].self, from: NSDataAsset(name: "items", bundle: Bundle.main)!.data)
     var body: some View {
-        List (items) { item in
-            Section(header: Text(item.name)) {
-                ForEach(item.items) { item in
-                    Text("")
+        NavigationView {
+            List  {
+                ForEach(items, id:\.self) { item in
+                    Section(header: Text(item.name)) {
+                        ForEach(item.items) { itemOne in
+                            Text(itemOne.name)
+                        }
+                    }
                 }
-            }
+            }.navigationBarTitle("Reading JSON", displayMode: .automatic)
+            .listStyle(GroupedListStyle())
         }
     }
 }

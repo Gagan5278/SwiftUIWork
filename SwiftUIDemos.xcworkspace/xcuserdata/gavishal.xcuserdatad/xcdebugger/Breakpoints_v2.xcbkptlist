@@ -34,38 +34,6 @@
             endingLineNumber = "47"
             landmarkName = "fetchArtistSongList(from:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F79A8EA7-B928-44F7-91A3-BE17B84247A2 - 50ef91be637bdc6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in closure #1 ((Swift.Result&lt;Swift.Array&lt;RestCallWithCombineFramework.SubModel&gt;, RestCallWithCombineFramework.StoreAPIError&gt;) -&gt; ()) -&gt; () in RestCallWithCombineFramework.ArtistSong.fetchArtistSongList(from: RestCallWithCombineFramework.EndPoint) -&gt; Combine.Future&lt;Swift.Array&lt;RestCallWithCombineFramework.SubModel&gt;, RestCallWithCombineFramework.StoreAPIError&gt;"
-                  moduleName = "RestCallWithCombineFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gavishal/Desktop/SwiftUI/SwiftUIWork/RestCallWithCombineFramework/RestCallWithCombineFramework/Service/ArtistSong.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "499">
-               </Location>
-               <Location
-                  uuid = "F79A8EA7-B928-44F7-91A3-BE17B84247A2 - 50ef91be637bdc6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in closure #1 ((Swift.Result&lt;Swift.Array&lt;RestCallWithCombineFramework.SubModel&gt;, RestCallWithCombineFramework.StoreAPIError&gt;) -&gt; ()) -&gt; () in RestCallWithCombineFramework.ArtistSong.fetchArtistSongList(from: RestCallWithCombineFramework.EndPoint) -&gt; Combine.Future&lt;Swift.Array&lt;RestCallWithCombineFramework.SubModel&gt;, RestCallWithCombineFramework.StoreAPIError&gt;"
-                  moduleName = "RestCallWithCombineFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gavishal/Desktop/SwiftUI/SwiftUIWork/RestCallWithCombineFramework/RestCallWithCombineFramework/Service/ArtistSong.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "616">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
