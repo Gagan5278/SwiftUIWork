@@ -21,5 +21,15 @@ struct Items: Codable, Identifiable,Hashable {
     let price: Double
     let restrictions: [String]
     let description: String
+    var picName: String {
+        name.replacingOccurrences(of: " ", with: "-")
+    }
+    var thumbnailImageName: String {
+        "\(picName)-thumb"
+    }
     
+    #if DEBUG
+    static let example = Items(id: "", name: "", photoCredit: "", price: 0.0, restrictions: [""], description: "")
+    #endif
+
 }

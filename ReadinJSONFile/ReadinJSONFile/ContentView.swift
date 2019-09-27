@@ -15,8 +15,8 @@ struct ContentView: View {
             List  {
                 ForEach(items, id:\.self) { item in
                     Section(header: Text(item.name)) {
-                        ForEach(item.items) { itemOne in
-                            Text(itemOne.name)
+                        ForEach(item.items) { itemMenu in
+                            CellItemRow(menuItem: itemMenu)
                         }
                     }
                 }
