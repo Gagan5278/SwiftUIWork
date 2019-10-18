@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CardViewDemo/CardViewDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CombineFrameworkFeildValidation/CombineFrameworkFeildValidation.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:RestCallWithCombineFramework/RestCallWithCombineFramework.xcodeproj">
    </FileRef>
    <FileRef
